@@ -1,0 +1,6 @@
+<?php require "db.php"; $r=$conn->query("SELECT * FROM issue_reports ORDER BY created_at DESC"); ?>
+<!DOCTYPE html><html><head><meta charset="UTF-8"><title>AquaTrack Reports</title><link rel="stylesheet" href="style.css"><style>
+table{width:90%;margin:40px auto;border-collapse:collapse;background:white}th,td{padding:12px;border:1px solid #ddd;text-align:left}th{background:#087ea4;color:white}
+</style></head><body><header class="navbar"><div class="logo">💧 AquaTrack</div><nav><a href="index.php">Home</a></nav></header>
+<section class="section"><div class="section-title"><p class="tag">MYSQL DATA</p><h2>Issue Reports</h2></div><table><tr><th>ID</th><th>Name</th><th>Area</th><th>Issue</th><th>Description</th><th>Status</th></tr>
+<?php while($x=$r->fetch_assoc()): ?><tr><td><?php echo $x["id"]; ?></td><td><?php echo htmlspecialchars($x["name"]); ?></td><td><?php echo htmlspecialchars($x["area"]); ?></td><td><?php echo htmlspecialchars($x["issue_type"]); ?></td><td><?php echo htmlspecialchars($x["description"]); ?></td><td><?php echo htmlspecialchars($x["status"]); ?></td></tr><?php endwhile; ?></table></section></body></html>

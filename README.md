@@ -1,33 +1,24 @@
-# AquaTrack – Industrial Water Management & Monitoring System
-
-## Student Details
-- **Name:** Samuel Chinokopota
-- **Roll No:** 24CS257
-- **Department:** B.E. Computer Science and Engineering
-- **Project:** AquaTrack – Industrial Water Management & Monitoring System
-- **Stage:** Stage 1 – Static Website
-
-## Industrial Use Case
-AquaTrack is a web application prototype for industrial facilities to monitor water consumption, identify unusual usage, report leaks, and organize maintenance issues.
+# AquaTrack Stage 2 – Dynamic Website
+**Student:** Samuel Chinokopota  
+**Roll No:** 24CS257  
+**Department:** B.E. Computer Science and Engineering
 
 ## Technologies
-- HTML5
-- CSS3
-- JavaScript
+HTML, CSS, JavaScript, PHP and MySQL.
 
-## Stage 1 Features
-1. Responsive navigation
-2. Industrial water dashboard
-3. Water consumption indicators
-4. Water-saving indicator
-5. Issue/leak reporting form
-6. JavaScript validation and confirmation
-7. Responsive desktop/mobile layout
+## Setup with XAMPP
+1. Install XAMPP.
+2. Start Apache and MySQL.
+3. Copy this folder into `C:\xampp\htdocs\AquaTrack-Stage2`.
+4. Open `http://localhost/phpmyadmin`.
+5. Import `database.sql`.
+6. Open `http://localhost/AquaTrack-Stage2/index.php`.
 
-## How to Run
-1. Download or clone the repository.
-2. Open `index.html` in Google Chrome or Microsoft Edge.
-3. Use the navigation menu and test the issue reporting form.
+## Dynamic features
+- PHP form processing
+- MySQL storage
+- Database-powered dashboard
+- Stored issue reports
+- Reports page
 
-## Future Stage 2
-The Stage 1 interface will later be extended using PHP/Servlets and MySQL to store users, water consumption records, issue reports, maintenance records, and administrator information.
+**Important:** GitHub Pages does not execute PHP. Stage 2 must run on XAMPP or another PHP/MySQL server.
