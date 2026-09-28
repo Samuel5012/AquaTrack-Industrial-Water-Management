@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AquaTrack | Industrial Water Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">💧 AquaTrack</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#dashboard">Dashboard</a>
+      <a href="#services">Services</a>
+      <a href="#report">Report Leak</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div>
+        <p class="tag">INDUSTRIAL WATER MANAGEMENT</p>
+        <h1>Monitor Water. Reduce Waste. Improve Operations.</h1>
+        <p class="hero-text">
+          AquaTrack is a web application concept for industries to monitor
+          water consumption, identify unusual usage and report maintenance issues.
+        </p>
+        <div class="buttons">
+          <a class="btn primary" href="#dashboard">View Dashboard</a>
+          <a class="btn secondary" href="#report">Report a Leak</a>
+        </div>
+      </div>
+      <div class="water-card">
+        <div class="water-icon">💧</div>
+        <h3>Today's Water Status</h3>
+        <div class="big-number">72%</div>
+        <p>Efficiency target achieved</p>
+      </div>
+    </section>
+
+    <section id="dashboard" class="section">
+      <div class="section-title">
+        <p class="tag">LIVE OVERVIEW</p>
+        <h2>Industrial Water Dashboard</h2>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <span class="card-icon">🚰</span>
+          <h3>Water Used</h3>
+          <p class="metric">12,450 L</p>
+          <small>Today's consumption</small>
+        </div>
+        <div class="card">
+          <span class="card-icon">📉</span>
+          <h3>Water Saved</h3>
+          <p class="metric">2,180 L</p>
+          <small>Compared with target</small>
+        </div>
+        <div class="card">
+          <span class="card-icon">⚠️</span>
+          <h3>Open Issues</h3>
+          <p class="metric">3</p>
+          <small>Require attention</small>
+        </div>
+        <div class="card">
+          <span class="card-icon">🔧</span>
+          <h3>Maintenance</h3>
+          <p class="metric">5</p>
+          <small>Tasks scheduled</small>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section light">
+      <div class="section-title">
+        <p class="tag">CORE FEATURES</p>
+        <h2>What AquaTrack Provides</h2>
+      </div>
+      <div class="feature-grid">
+        <article class="feature">
+          <h3>📊 Usage Monitoring</h3>
+          <p>View daily water consumption and compare usage with operational targets.</p>
+        </article>
+        <article class="feature">
+          <h3>🚨 Leak Reporting</h3>
+          <p>Employees can quickly report suspected leaks for maintenance follow-up.</p>
+        </article>
+        <article class="feature">
+          <h3>🔧 Maintenance Tracking</h3>
+          <p>Record maintenance requests and keep operational issues organized.</p>
+        </article>
+        <article class="feature">
+          <h3>📈 Efficiency Insights</h3>
+          <p>Use simple indicators to identify areas where water can be conserved.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="report" class="section">
+      <div class="form-wrap">
+        <div>
+          <p class="tag">QUICK ACTION</p>
+          <h2>Report a Water Issue</h2>
+          <p>Use this form to report a leak or abnormal water usage.</p>
+        </div>
+        <form id="issueForm">
+          <label for="name">Your Name</label>
+          <input id="name" type="text" placeholder="Enter your name" required>
+
+          <label for="area">Area / Department</label>
+          <input id="area" type="text" placeholder="e.g. Production Unit" required>
+
+          <label for="issue">Issue Type</label>
+          <select id="issue" required>
+            <option value="">Select issue</option>
+            <option>Water Leak</option>
+            <option>Abnormal Consumption</option>
+            <option>Damaged Pipe</option>
+            <option>Other</option>
+          </select>
+
+          <label for="description">Description</label>
+          <textarea id="description" rows="4" placeholder="Describe the issue" required></textarea>
+
+          <button class="btn primary" type="submit">Submit Report</button>
+          <p id="formMessage" class="form-message"></p>
+        </form>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div>
+        <p class="tag">CONTACT</p>
+        <h2>AquaTrack Operations</h2>
+        <p>Email: support@aquatrack.example</p>
+        <p>Phone: +91 00000 00000</p>
+      </div>
+      <div class="contact-box">
+        <strong>Stage 1 Prototype</strong>
+        <p>HTML + CSS + JavaScript</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 AquaTrack | Industrial Water Management System | Developed by Samuel Chinokopota (24CS257)</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
